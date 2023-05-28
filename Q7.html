@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q7</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: fuchsia;
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[2].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+       When you create a machine learning service to learn how to classify objects using tabular data, what type of servers should you choose to manage compute resources?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> Virtual machines (VMs)</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1"> Cluster of VMs</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> No servers; you should use specialized services, which are serverless.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3"> VMs running Linux only</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q6.html">Previous Question</a>
+    <a href="Q8.html">Next Question</a>
+
+
+</body>
+</html>

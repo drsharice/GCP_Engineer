@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q8</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: gold;
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+       When does investing in servers for extended periods of time, such as commiting to use servers for three to five years, work well?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> When a company is just starting up</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1"> When a company can accurately predict server need gor an extended period of time</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> When a company has a fixed IT budget</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3"> When a company has a variable IT budget</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q7.html">Previous Question</a>
+    <a href="Q9.html">Next Question</a>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q2</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: oldlace;
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[3].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+        If you use a cluster that is managed by a cloud provider, which of these will be managed for you by the cloud provider?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> Monitoring</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1"> Networking</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> Some security management tasks</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3"> All of the above</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q1.html">Previous Question</a>
+    <a href="Q3.html">Next Question</a>
+
+
+</body>
+</html>

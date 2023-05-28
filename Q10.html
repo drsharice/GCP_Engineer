@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q10</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: hotpink;
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[3].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+       You plan to use AutoML, to analyze sales data and predict product demand in the near future. You plan to analyze between 1,000 and 2,500 products per hour. How many VMs should you allocate to meet peak demand?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> 1</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">10</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> 25</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3"> None, AutoML is a serverless service </label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q9.html">Previous Question</a>
+    <a href="Q11.html">Next Question</a>
+
+
+</body>
+</html>

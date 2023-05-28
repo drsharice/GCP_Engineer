@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q3</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: aliceblue;
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+        You need serverless computing for file processing and running the back end of a website; which two products can you choose from Google Cloud?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> Kubernetes Engine and Compute Engine</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1"> Cloud Run and Cloud Functions</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> Cloud Functions and Compute Engine</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3"> Cloud Functions and Kubernetes Engine</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q2.html">Previous Question</a>
+    <a href="Q4.html">Next Question</a>
+
+
+</body>
+</html>
