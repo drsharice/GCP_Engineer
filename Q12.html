@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q12</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rgb(200, 255, 105);
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[3].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+      You have created a VM. Which of the following system administration operations are you allowed to perform on it?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> Configure the filesystem</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Patch operating system software</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">Change the file and directory permissions </label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">All of the above</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q11.html">Previous Question</a>
+    <a href="Q13.html">Next Question</a>
+
+
+</body>
+</html>

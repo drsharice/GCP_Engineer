@@ -1,0 +1,54 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q16</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rgb(132, 130, 139);
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+      Why can cloud providers offer elastic resources resource allocation?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0">Cloud providers can take resources from lower-priority customers</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Extensive resources and the ability to quickly shift resources between customers enables public cloud providers to offer elastic resource allocation more efficiently than can be done in smaller data centers</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">They charge more the more resources you use</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">They don't</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q15.html">Previous Question</a>
+    <a href="Q17.html">Next Question</a>
+
+
+</body>
+</html>

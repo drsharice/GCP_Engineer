@@ -1,0 +1,54 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q20</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rgb(42, 218, 209);
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+      A user prefers services that require minimal setup; why would you recommend Cloud Storage, Cloud Run, and Cloud functions?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0">They are charged only by time</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">They are serveless</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">They require a user to configure VMs</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">They can only run applications written in Go.</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q19.html">Previous Question</a>
+    <a href="Q21.html">Next Question</a>
+
+
+</body>
+</html>

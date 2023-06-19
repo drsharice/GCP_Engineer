@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q11</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rgb(179, 188, 163);
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+       You have to run a number of services to support an application. Which of the following is a good deployment model?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> Run on a large, single VM.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Use containers in a managed cluster</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> Use two large VMs, making one of them read only</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3"> Use a small VM for all services and increase the size of the VM when CPU utilization exceeds 90 percent</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q10.html">Previous Question</a>
+    <a href="Q12.html">Next Question</a>
+
+
+</body>
+</html>

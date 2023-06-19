@@ -1,0 +1,54 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q15</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rgb(219, 184, 226);
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[3].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+      You need to store data for an application and are using a cache. How will thecache affect data retrieval?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0">A cache improves the execution of client-side JavaScript</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">A cache will continue to store data even if power is lost, improving availability</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">Caches can get out of sync with the system of truth </label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">Using a cache will reduce latency, since retrieving from SSDs or HDDs</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q14.html">Previous Question</a>
+    <a href="Q16.html">Next Question</a>
+
+
+</body>
+</html>
