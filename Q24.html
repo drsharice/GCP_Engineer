@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q24</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rgb(202, 157, 157);
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[0].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+     You are deploying an API to the public Internet and are concerned that your service will be subject to DDoS attacks.
+     Which Google Cloud service should you consider to protect your API?
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0">Cloud Armor</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Cloud CDN</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">Cloud IAM</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">VPCs</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q23.html">Previous Question</a>
+    <a href="Q25.html">Next Question</a>
+
+
+</body>
+</html>

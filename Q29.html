@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q29</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rgb(208, 216, 239);
+            font-size: 32px;
+        }
+    </style>
+     <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[3].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+          </script>
+     
+</head>
+<body>
+    <p>
+        You have a developer laptop with the Cloud SDK installed on Ubuntu. The Cloud SDK was installed from the Google Cloud Ubuntu package repository. You want to test your application locally on your laptop with Cloud Datastore. What should you do?   
+  
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> Export Cloud Datastore data using gcloud datastore export.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Create a Cloud Datastore index using gcloud datastore indexes create.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> Install the google-cloud-sdk-datastore-emulator component using the apt get install command.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">Install the cloud-datastore-emulator component using the gcloud components install command.</label></br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q28.html">Previous Question</a>
+    <a href="Q30.html">Next Question</a>
+
+
+</body>
+</html>
