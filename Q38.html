@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q38</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: mintcream;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You have a workload running on Compute Engine that is critical to your business. You want to ensure that the data on the boot disk of this workload is backed up regularly. You need to be able to restore a backup as quickly as possible in case of disaster. You also want older backups to be cleaned automatically to save on cost. You want to follow Google-recommended practices. What should you do?
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0">Create a Cloud Function to create an instance template.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Create a snapshot schedule for the disk using the desired interval.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">Create a cron job to create a new disk from the disk using gcloud.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">Create a Cloud Task to create an image and export it to Cloud Storage.</label></br>
+        </br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+    </br>
+    <a href="Q36.html">Previous Question</a>
+    <a href="Q38.html">Next Question</a>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q34</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: lightgrey;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[0].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        Your organization has user identities in Active Directory. Your organization wants to use Active Directory as their source of truth for identities. Your organization wants to have full control over the Google accounts used by employees for all Google services, including your Google Cloud Platform (GCP) organization. What should you do?
+
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0"> Use Google Cloud Directory Sync (GCDS) to synchronize users into Cloud Identity.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Use the cloud Identity APIs and write a script to synchronize users to Cloud Identity. </label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">Export users from Active Directory as a CSV and import them to Cloud Identity via the Admin Console.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3"> Ask each employee to create a Google account using self signup. Require that each employee use their company email address and password.</label></br>
+        </br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+    </br>
+    <a href="Q33.html">Previous Question</a>
+    <a href="Q35.html">Next Question</a>
+
+
+</body>
+</html>

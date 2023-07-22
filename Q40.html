@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q40</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: cornsilk;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You are managing several Google Cloud Platform (GCP) projects and need access to all logs for the past 60 days. You want to be able to explore and quickly analyze the log contents. You want to follow Google-recommended practices to obtain the combined logs for all projects. What should you do?
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label><input type="radio" name="Question" value="radio" id="Question 0">Navigate to Stackdriver Logging and select resource.labels.project_id="*"</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Create a Stackdriver Logging Export with a Sink destination to a BigQuery dataset. Configure the table expiration to 60 days.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> Create a Stackdriver Logging Export with a Sink destination to Cloud Storage. Create a lifecycle rule to delete objects after 60 days.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">Configure a Cloud Scheduler job to read from Stackdriver and store the logs in BigQuery. Configure the table expiration to 60 days.</label></br>
+        </br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+    </br>
+    <a href="Q39.html">Previous Question</a>
+    <a href="Q41.html">Next Question</a>
+
+
+</body>
+</html>
