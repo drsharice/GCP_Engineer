@@ -18,7 +18,7 @@
         function checkAnswers() {
                 var Q2_1 = document.getElementById("Q2_1");
                 // determine whether the answer is correct
-                if (Q2_1.elements[2].checked)
+                if (Q2_1.elements[0].checked)
                     alert("Congratulations your answer is correct");
                 else
                     alert("Incorrect, The correct answer")
@@ -28,15 +28,15 @@
 </head>
 <body>
     <p>
-      What is not a characteristic of specialized services in Google Cloud?
-  
+        You are running a web application on Cloud Run for a few hundred users. Some of your users complain that the initial web page of the application takes much longer to load than the following pages. You want to follow Google’s recommendations to mitigate the issue. What should you do?
+
     </p>
 
     <form id="Q2_1" onsubmit="checkAnswers()" action="">
-        <label><input type="radio" name="Question" value="radio" id="Question 0">They are serverless; you do not need to configure servers of cluster</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 1">They provide a specific function, such as translating text or analyzing images</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 2">They require monitorng by the user</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 3">They provide an API to access the functionality of the service</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 0">Set the minimum number of instances for your Cloud Run service to 3.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1"> Set the concurrency number to 1 for your Cloud Run service.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">Set the maximum number of instances for your Cloud Run service to 100.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">Update your web application to use the protocol HTTP/2 instead of HTTP/1.1.</label></br>
 
         <input type="submit" name="submit" value="Submit" />
     </form>

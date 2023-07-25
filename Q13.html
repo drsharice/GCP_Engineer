@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -18,7 +18,7 @@
         function checkAnswers() {
                 var Q2_1 = document.getElementById("Q2_1");
                 // determine whether the answer is correct
-                if (Q2_1.elements[0].checked)
+                if (Q2_1.elements[1].checked)
                     alert("Congratulations your answer is correct");
                 else
                     alert("Incorrect, The correct answer")
@@ -28,15 +28,15 @@
 </head>
 <body>
     <p>
-      Cloud Filestore is based on what filesystem technology?
-  
+        You are working for a hospital that stores its medical images in an on-premises data room. The hospital wants to use Cloud Storage for archival storage of these images. The hospital wants an automated process to upload any new medical images to Cloud Storage. You need to design and implement a solution. What should you do?
+
     </p>
 
     <form id="Q2_1" onsubmit="checkAnswers()" action="">
-        <label><input type="radio" name="Question" value="radio" id="Question 0">Network File System (NFS)</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 1">XFS</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 2">EXT4</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 3">ReiserFS</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 0">Create a Pub/Sub topic, and enable a Cloud Storage trigger for the Pub/Sub topic. Create an application that sends all medical images to the Pub/Sub topic.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Create a script that uses the gcloud storage command to synchronize the on-premises storage with Cloud Storage, Schedule the script as a cron job</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2"> Create a Pub/Sub topic, and create a Cloud Function connected to the topic that writes data to Cloud Storage. Create an application that sends all medical images to the Pub/Sub topic.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">In the Google Cloud console, go to Cloud Storage. Upload the relevant images to the appropriate bucket.</label></br>
 
         <input type="submit" name="submit" value="Submit" />
     </form>

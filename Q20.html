@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -18,7 +18,7 @@
         function checkAnswers() {
                 var Q2_1 = document.getElementById("Q2_1");
                 // determine whether the answer is correct
-                if (Q2_1.elements[1].checked)
+                if (Q2_1.elements[3].checked)
                     alert("Congratulations your answer is correct");
                 else
                     alert("Incorrect, The correct answer")
@@ -28,15 +28,30 @@
 </head>
 <body>
     <p>
-      A user prefers services that require minimal setup; why would you recommend Cloud Storage, Cloud Run, and Cloud functions?
-  
+        Your company requires all developers to have the same permissions, regardless of the Google Cloud project they are working on. Your company’s security policy also restricts developer permissions to Compute Engine, Cloud Functions, and Cloud SQL. You want to implement the security policy with minimal effort. What should you do?
+
     </p>
 
     <form id="Q2_1" onsubmit="checkAnswers()" action="">
-        <label><input type="radio" name="Question" value="radio" id="Question 0">They are charged only by time</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 1">They are serveless</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 2">They require a user to configure VMs</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 3">They can only run applications written in Go.</label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">• Create a custom role with Compute Engine, Cloud Functions, and Cloud SQL permissions in one project within the Google Cloud organization.
+            • Copy the role across all projects created within the organization with the gcloud iam roles copy command.
+            • Assign the role to developers in those projects.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1">• Add all developers to a Google group in Google Groups for Workspace.
+            • Assign the predefined role of Compute Admin to the Google group at the Google Cloud organization level.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2"> Add all developers to a Google group in Cloud Identity.
+            • Assign predefined roles for Compute Engine, Cloud Functions, and Cloud SQL permissions to the Google group for each project in the Google Cloud organization.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> Add all developers to a Google group in Cloud Identity.
+            • Create a custom role with Compute Engine, Cloud Functions, and Cloud SQL permissions at the Google Cloud organization level.
+            • Assign the custom role to the Google group.
+
+        </label></br>
 
         <input type="submit" name="submit" value="Submit" />
     </form>
