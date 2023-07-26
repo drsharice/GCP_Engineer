@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q47</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: palegoldenrod;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[2].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You have an application that runs on Compute Engine VM instances in a custom Virtual Private Cloud (VPC). Your company’s security policies only allow the use of internal IP addresses on VM instances and do not let VM instances connect to the internet. You need to ensure that the application can access a file hosted in a Cloud Storage bucket within your project. What should you do?
+
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">Enable Private Service Access on the Cloud Storage Bucket.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1"> Add storage.googleapis.com to the list of restricted services in a VPC Service Controls perimeter and add your project to the list of protected projects.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2"> Enable Private Google Access on the subnet within the custom VPC.
+            <label>
+                <input type="radio" name="Question" value="radio" id="Question 3">  Deploy a Cloud NAT instance and route the traffic to the dedicated IP address of the Cloud Storage bucket.
+            </label></br>
+
+            </ br>
+            </ br>
+            <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+</form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q46.html">Previous Question</a>
+    <a href="Q48.html">Next Question</a>
+
+
+</body>
+</html>

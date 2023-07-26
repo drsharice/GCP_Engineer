@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q48</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: mistyrose;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[0].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        Your company completed the acquisition of a startup and is now merging the IT systems of both companies. The startup had a production Google Cloud project in their organization. You need to move this project into your organization and ensure that the project is billed to your organization. You want to accomplish this task with minimal effort. What should you do?
+
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0"> Use the projects.move method to move the project to your organization. Update the billing account of the project to that of your organization.</label>
+            <label>
+                <input type="radio" name="Question" value="radio" id="Question 1">Ensure that you have an Organization Administrator Identity and Access Management (IAM) role assigned to you in both organizations. Navigate to the Resource Manager in the startup’s Google Cloud organization, and drag the project to your company's organization.</label>
+                <label>
+                    <input type="radio" name="Question" value="radio" id="Question 2"> Create a Private Catalog for the Google Cloud Marketplace, and upload the resources of the startup's production project to the Catalog. Share the Catalog with your organization, and deploy the resources in your company’s project.</label>
+                    <label>
+                        <input type="radio" name="Question" value="radio" id="Question 3">  Create an infrastructure-as-code template for all resources in the project by using Terraform, and deploy that template to a new project in your organization. Delete the project from the startup’s Google Cloud organization.</label>
+
+
+
+                        </ br>
+                        </ br>
+                        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+</form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q47.html">Previous Question</a>
+    <a href="Q49.html">Next Question</a>
+
+
+</body>
+</html>

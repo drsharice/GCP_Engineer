@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q46</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: blueviolet;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[3].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        Your company has multiple projects linked to a single billing account in Google Cloud. You need to visualize the costs with specific metrics that should be dynamically calculated based on company-specific criteria. You want to automate the process. What should you do?
+
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">In the Google Cloud console, visualize the costs related to the projects in the Reports section.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1">  In the Google Cloud console, visualize the costs related to the projects in the Cost breakdown section.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2">  In the Google Cloud console, use the export functionality of the Cost table. Create a Looker Studio dashboard on top of the CSV export.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3">  Configure Cloud Billing data export to BigQuery for the billing account. Create a Looker Studio dashboard on top of the BigQuery export.
+        </label></br>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q45.html">Previous Question</a>
+    <a href="Q47.html">Next Question</a>
+
+
+</body>
+</html>

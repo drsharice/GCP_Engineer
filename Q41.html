@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q41</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: orange;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[0].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You have two subnets (subnet-a and subnet-b) in the default VPC. Your database servers are running in subnet-a. Your application servers and web servers are running in subnet-b. You want to configure a firewall rule that only allows database traffic from the application servers to the database servers. What should you do?
+
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">  • Create service accounts sa-app and sa-db.
+            • Associate service account sa-app with the application servers and the service account sa-db with the database servers.
+            • Create an ingress firewall rule to allow network traffic from source service account sa-app to target service account sa-db.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1">  • Create network tags app-server and db-server.
+            • Add the app-server tag to the application servers and the db-server tag to the database servers.
+            • Create an egress firewall rule to allow network traffic from source network tag app-server to target network tag db-server.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2"> • Create a service account sa-app and a network tag db-server.
+            • Associate the service account sa-app with the application servers and the network tag db-server with the database servers.
+            • Create an ingress firewall rule to allow network traffic from source VPC IP addresses and target the subnet-a IP addresses.
+        </label></br>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> • Create a network tag app-server and service account sa-db.
+            • Add the tag to the application servers and associate the service account with the database servers.
+            • Create an egress firewall rule to allow network traffic from source network tag app-server to target service account sa-db.
+        </label></br>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q40.html">Previous Question</a>
+    <a href="Q42.html">Next Question</a>
+
+
+</body>
+</html>

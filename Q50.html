@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q50</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: peachpuff;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[0].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You are configuring Cloud DNS. You want to create DNS records to point home.mydomain.com, mydomain.com, and www.mydomain.com to the IP address of your Google Cloud load balancer. What should you do?
+
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">   Create one CNAME record to point mydomain.com to the load balancer, and create two A records to point WWW and HOME to mydomain.com respectively. </label>
+            <label>
+                <input type="radio" name="Question" value="radio" id="Question 1"> Create one CNAME record to point mydomain.com to the load balancer, and create two AAAA records to point WWW and HOME to mydomain.com respectively.</label>
+                <label>
+                    <input type="radio" name="Question" value="radio" id="Question 2"> Create one A record to point mydomain.com to the load balancer, and create two CNAME records to point WWW and HOME to mydomain.com respectively.</label>
+                    <label>
+                        <input type="radio" name="Question" value="radio" id="Question 3"> Create one A record to point mydomain.com to the load balancer, and create two NS records to point WWW and HOME to mydomain.com respectively.</label>
+
+                        </ br>
+                        </ br>
+                        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+</form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q49.html">Previous Question</a>
+    <a href="Q51.html">Next Question</a>
+
+
+</body>
+</html>
