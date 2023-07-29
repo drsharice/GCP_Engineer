@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q55</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: palegoldenrod;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You have deployed multiple Linux instances on Compute Engine. You plan on adding more instances in the coming weeks. You want to be able to access all of these instances through your SSH client over the internet without having to configure specific access on the existing and new instances. You do not want the
+        Compute Engine instances to have a public IP. What should you do?
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">  Configure Cloud Identity-Aware Proxy for HTTPS resources.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1">  Configure Cloud Identity-Aware Proxy for SSH and TCP resources
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2"> Create an SSH keypair and store the public key as a project-wide SSH Key.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> Create an SSH keypair and store the private key as a project-wide SSH Key.
+
+
+        </label>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q54.html">Previous Question</a>
+    <a href="Q55.ht6l">Next Question</a>
+
+
+</body>
+</html>

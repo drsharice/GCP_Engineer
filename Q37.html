@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Q36</title>
+    <title>Q37</title>
     <style>
         p {
             font-size: 40px;
@@ -18,7 +18,7 @@
         function checkAnswers() {
                 var Q2_1 = document.getElementById("Q2_1");
                 // determine whether the answer is correct
-                if (Q2_1.elements[2].checked)
+                if (Q2_1.elements[0].checked)
                     alert("Congratulations your answer is correct");
                 else
                     alert("Incorrect, The correct answer")
@@ -28,15 +28,14 @@
 </head>
 <body>
     <p>
-        Your management has asked an external auditor to review all the resources in a specific project. The security team has enabled the Organization Policy called
-        Domain Restricted Sharing on the organization node by specifying only your Cloud Identity domain. You want the auditor to only be able to view, but not modify, the resources in that project. What should you do?
+        You deployed an application on a managed instance group in Compute Engine. The application accepts Transmission Control Protocol (TCP) traffic on port 389 and requires you to preserve the IP address of the client who is making a request. You want to expose the application to the internet by using a load balancer. What should you do?
     </p>
 
     <form id="Q2_1" onsubmit="checkAnswers()" action="">
-        <label><input type="radio" name="Question" value="radio" id="Question 0">Ask the auditor for their Google account, and give them the Viewer role on the project.</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 1">Ask the auditor for their Google account, and give them the Security Reviewer role on the project.</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 2"> Create a temporary account for the auditor in Cloud Identity, and give that account the Viewer role on the project.</label></br>
-        <label><input type="radio" name="Question" value="radio" id="Question 3"> Create a temporary account for the auditor in Cloud Identity, and give that account the Security Reviewer role on the project.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 0">Expose the application by using an external TCP Network Load Balancer.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 1">Expose the application by using a TCP Proxy Load Balancer.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 2">Expose the application by using an SSL Proxy Load Balancer.</label></br>
+        <label><input type="radio" name="Question" value="radio" id="Question 3">Expose the application by using an internal TCP Network Load Balancer.</label></br>
         </br>
 
         <input type="submit" name="submit" value="Submit" />
@@ -47,8 +46,8 @@
     <a href="index.html">Home</a>
     <br />
     </br>
-    <a href="Q35.html">Previous Question</a>
-    <a href="Q37.html">Next Question</a>
+    <a href="Q36.html">Previous Question</a>
+    <a href="Q38.html">Next Question</a>
 
 
 </body>
