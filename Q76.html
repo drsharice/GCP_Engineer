@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q76</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: rosybrown;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct";
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You have been asked to set up the billing configuration for a new Google Cloud customer. Your customer wants to group resources that share common IAM policies. What should you do?
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">Use labels to group resources that share common IAM policies.
+
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1"> Use folders to group resources that share common IAM policies.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2">Set up a proper billing account structure to group IAM policies.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> Set up a proper project naming structure to group IAM policies.
+
+        </label>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q75.html">Previous Question</a>
+    <a href="Q77.html">Next Question</a>
+
+
+</body>
+</html>

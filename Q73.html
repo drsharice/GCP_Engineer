@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q73</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: oldlace;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[3].checked)
+                    alert("Congratulations your answer is correct";
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You have created an application that is packaged into a Docker image. You want to deploy the Docker image as a workload on Google Kubernetes Engine. What should you do?
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">Upload the image to Cloud Storage and create a Kubernetes Service referencing the image.
+
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1"> Upload the image to Cloud Storage and create a Kubernetes Deployment referencing the image.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2"> Upload the image to Container Registry and create a Kubernetes Service referencing the image.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> Upload the image to Container Registry and create a Kubernetes Deployment referencing the image.
+
+
+        </label>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q72.html">Previous Question</a>
+    <a href="Q74.html">Next Question</a>
+
+
+</body>
+</html>

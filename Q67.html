@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q67</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: lightcyan;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[2].checked)
+                    alert("Congratulations your answer is correct";
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        Which predefined granular access to resources grants read-only access to applications in App Engine
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0"> appengine.ServiceAdmin
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1">  appengine.appAdmin
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2"> appengine.appViewer
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> None of the above
+
+
+        </label>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q64.html">Previous Question</a>
+    <a href="Q66.ht6l">Next Question</a>
+
+
+</body>
+</html>

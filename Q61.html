@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q61</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: floralwhite;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[1].checked)
+                    alert("Congratulations your answer is correct");
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        What is a petabyte-scale analytics database service for data warehousing
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0"> Cloud Dataproc
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1">  BigQuery
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2"> Cloud Dataprep
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> Cloud Dataflow
+
+
+        </label>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q60.html">Previous Question</a>
+    <a href="Q62.html">Next Question</a>
+
+
+</body>
+</html>

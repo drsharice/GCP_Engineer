@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q75</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: paleturquoise;
+            font-size: 32px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function checkAnswers() {
+                var Q2_1 = document.getElementById("Q2_1");
+                // determine whether the answer is correct
+                if (Q2_1.elements[2].checked)
+                    alert("Congratulations your answer is correct";
+                else
+                    alert("Incorrect, The correct answer")
+            }
+    </script>
+
+</head>
+<body>
+    <p>
+        You have been asked to create robust Virtual Private Network (VPN) connectivity between a new Virtual Private Cloud (VPC) and a remote site. Key requirements include dynamic routing, a shared address space of 10.19.0.1/22, and no overprovisioning of tunnels during a failover event. You want to follow Google- recommended practices to set up a high availability Cloud VPN. What should you do?
+    </p>
+
+    <form id="Q2_1" onsubmit="checkAnswers()" action="">
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 0">Use a custom mode VPC network, configure static routes, and use active/passive routing.
+
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 1">Use an automatic mode VPC network, configure static routes, and use active/active routing.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 2">Use a custom mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and use active/passive routing.
+        </label>
+        <label>
+            <input type="radio" name="Question" value="radio" id="Question 3"> Use an automatic mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and configure policy-based routing.
+
+        </label>
+
+        </ br>
+        </ br>
+        <input type="submit" name="submit" value="Submit" style="height: 50px; width: 100px" />
+    </form>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q75.html">Previous Question</a>
+    <a href="Q77.html">Next Question</a>
+
+
+</body>
+</html>
